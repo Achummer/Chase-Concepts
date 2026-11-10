@@ -1,0 +1,40 @@
+/* Logos page: shares the header, nav, spiky sides, torn-paper text,
+   and footer with the About page, then adds image layouts. */
+@import url("about.css");
+
+/* Wider column so the image sheets have room */
+.content { max-width: 40rem; }
+
+/* The first section's heading sits above the opening paragraph */
+section + section { margin-top: 2.5rem; }
+
+/* Images */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Two type-study sheets side by side */
+.pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin: 1.75rem auto 0;
+}
+
+/* Single white concept/refinement sheets */
+.sheet {
+  width: min(100%, 26rem);
+  margin: 1.75rem auto 0;
+}
+
+/* Final logo, shown wide on its grey backdrop */
+.final {
+  width: 100%;
+  margin: 1.75rem auto 0;
+}
+
+@media (max-width: 600px) {
+  .pair { grid-template-columns: 1fr; }
+}

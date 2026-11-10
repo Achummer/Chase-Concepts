@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Posters | Chase Concepts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jaini+Purva&family=Duru+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="posters.css">
+</head>
+<body id="top">
+
+  <!-- Rough-edge filter for the torn-paper text blocks -->
+  <svg class="defs" width="0" height="0" aria-hidden="true" focusable="false">
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+
+  <header>
+    <h1>Poster Concepts</h1>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="logos.html">Logos</a></li>
+        <li><a href="posters.html" aria-current="page">Posters</a></li>
+        <li><a class="small-text" href="behind-the-scenes.html">Behind<br>the Scenes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content">
+
+      <section class="intro">
+        <h2>Purpose and Intention</h2>
+        <p><span>These are the promotional poster design iterations I went through before deciding on the final design I used for the film. I wanted the poster to evoke an ominous energy while also having a playful quality to it. To achieve this I utilized darker color palettes and simple stylized figures throughout each design. I started out with 5 ideas to make mockups for which you can see below.</span></p>
+
+        <svg class="down-arrow" viewBox="0 0 60 110" aria-hidden="true" focusable="false">
+          <path d="M30 4 C28 40 32 70 30 104 M8 80 L30 106 L53 78" fill="none" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </section>
+
+      <section>
+        <div class="grid">
+          <img src="images/poster-roughs-01.png" alt="Rough poster 1: CHASE in textured letters above a blue-haired figure in mid-stride">
+          <img src="images/poster-roughs-02.png" alt="Rough poster 2: a small figure running down a beam of light with the CHASE title">
+          <img src="images/poster-roughs-04.png" alt="Rough poster 4: grey angular shapes with CHASE on a label">
+          <img src="images/poster-roughs-03.png" alt="Rough poster 3: a dark silhouette holding a glowing object beneath a spiky CHASE title">
+          <img class="solo" src="images/poster-roughs-05.png" alt="Rough poster 5: two figures running through dark trees above a glowing CHASE title">
+        </div>
+      </section>
+
+      <section>
+        <p><span>Once these poster mockups were made, I sought advice from my peers on which ones they thought conveyed my intentions the best. With their help, I was able to narrow down my potential designs and continued refinements for them which you can see below.</span></p>
+
+        <div class="grid">
+          <img src="images/poster-roughs-06.png" alt="Rough poster 6: a dark house with a glowing window and white CHASE lettering">
+          <img src="images/refined-poster.png" alt="Refined poster: two figures running under a full moon above a blue CHASE title">
+        </div>
+      </section>
+
+      <section>
+        <p><span>As much as I liked the design with the house, I agreed with my peers that the design showcasing the two figures running was the best iteration for my intentions for the final poster. With a few more adjustments, the final poster was complete!</span></p>
+
+        <img class="final" src="images/poster-final.png" alt="Final CHASE poster: two figures running through a moonlit forest above the title">
+      </section>
+
+    </div>
+  </main>
+
+</body>
+</html>

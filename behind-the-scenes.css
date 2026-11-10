@@ -1,0 +1,95 @@
+/* Behind the Scenes page: shares the header, nav, spiky sides, torn-paper
+   text, and footer with the About page, then adds the video grid. */
+@import url("about.css");
+
+:root {
+  --body: "Duru Sans", "Trebuchet MS", sans-serif;
+}
+
+/* Page title is Juice ITC in the Figma file (a system font),
+   with Jaini Purva as the fallback. */
+h1 { font-family: "Juice ITC", var(--display); }
+
+.content { max-width: 69rem; }
+
+section + section { margin-top: 2.5rem; }
+
+/* Intro text blocks */
+.narrow p { max-width: 30rem; margin: 0 auto; }
+.wide-text p { max-width: 43.5rem; margin: 0 auto; }
+.wide-text .gap { margin-top: 2rem; }
+
+.narrow p span,
+.wide-text p span {
+  font-size: 1.5rem;
+  line-height: 2.1;
+  letter-spacing: -0.02em;
+}
+
+/* ---------- Video grid ---------- */
+.clips {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem 2rem;
+  margin-top: 3.5rem;
+}
+
+figure { margin: 0; }
+
+.clip {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 8px solid #000;
+  background: #000;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.clip video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.clip:focus-visible {
+  outline: 3px solid var(--cream);
+  outline-offset: 3px;
+}
+
+/* Play icon sits bottom-right and disappears while the clip plays */
+.play {
+  position: absolute;
+  right: 0.9rem;
+  bottom: 0.9rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  transition: opacity 0.15s;
+}
+.clip.is-playing .play { opacity: 0; }
+.clip.is-playing:hover .play,
+.clip.is-playing:focus-visible .play { opacity: 1; }
+
+/* Captions */
+figcaption {
+  margin-top: 0.9rem;
+  text-align: center;
+}
+
+figcaption span {
+  padding: 0.1em 0.45em;
+  font-size: 1.25rem;
+  line-height: 1.9;
+  letter-spacing: -0.02em;
+  -webkit-text-stroke: 15px var(--cream);
+  text-decoration-color: var(--cream);
+  paint-order: stroke;
+}
+
+@media (max-width: 800px) {
+  .clips { grid-template-columns: minmax(0, 1fr); }
+  .narrow p span,
+  .wide-text p span { font-size: 1.25rem; }
+}

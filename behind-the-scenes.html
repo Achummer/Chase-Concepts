@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Behind the Scenes | Chase Concepts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jaini+Purva&family=Duru+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="behind-the-scenes.css">
+</head>
+<body id="top">
+
+  <!-- Rough-edge filter for the torn-paper text blocks -->
+  <svg class="defs" width="0" height="0" aria-hidden="true" focusable="false">
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+
+  <header>
+    <h1>Behind the Scenes</h1>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="logos.html">Logos</a></li>
+        <li><a href="posters.html">Posters</a></li>
+        <li><a class="small-text" href="behind-the-scenes.html" aria-current="page">Behind<br>the Scenes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content">
+
+      <section class="narrow">
+        <h2>Film Location</h2>
+        <p><span>CHASE was filmed in the backyard of my childhood house. I specifically waited till the sun was almost finished setting so that it would be dark out yet we would still have enough light to be able to see where we were going. All footage was captured on my smartphone.</span></p>
+      </section>
+
+      <section class="wide-text">
+        <h2>Crew Involved</h2>
+        <p><span>The people involved in playing the characters in CHASE were director Abby Hummer playing the main character, Kiara Knowles playing the horned creature, and Kael Knowles playing the hooded figure. Costuming was provided by the director as well as items the other actors brought from home. All editing was done by the director and the soundtrack for the film is comprised of royalty free music track “Dead Silence” by Lennon Hutton.</span></p>
+        <p class="gap"><span>Below are some of the raw footage clips that would end up being edited and used in the film. (click to play/pause)</span></p>
+      </section>
+
+      <section class="clips">
+        <figure>
+          <button class="clip" type="button" aria-label="Play clip: Walking down the staircase outside">
+            <video src="videos/clip-01.mp4" poster="images/clip-01-poster.jpg" preload="metadata" loop playsinline muted></video>
+            <svg class="play" viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="24" cy="24" r="21" fill="rgba(0,0,0,.65)" stroke="#fdf3d9" stroke-width="2.5"/>
+              <path d="M19 14 L35 24 L19 34 Z" fill="#fdf3d9"/>
+            </svg>
+          </button>
+          <figcaption><span>This was easy footage of walking down the staircase outside. You may recognize that this clip was used for the start of the film.</span></figcaption>
+        </figure>
+        <figure>
+          <button class="clip" type="button" aria-label="Play clip: Open grass area and trees">
+            <video src="videos/clip-02.mp4" poster="images/clip-02-poster.jpg" preload="metadata" loop playsinline muted></video>
+            <svg class="play" viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="24" cy="24" r="21" fill="rgba(0,0,0,.65)" stroke="#fdf3d9" stroke-width="2.5"/>
+              <path d="M19 14 L35 24 L19 34 Z" fill="#fdf3d9"/>
+            </svg>
+          </button>
+          <figcaption><span>My backyard has a lot of trees and open grass area so it was easy to get eerie forest shots like this.</span></figcaption>
+        </figure>
+        <figure>
+          <button class="clip" type="button" aria-label="Play clip: A bird makes a loud noise">
+            <video src="videos/clip-03.mp4" poster="images/clip-03-poster.jpg" preload="metadata" loop playsinline muted></video>
+            <svg class="play" viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="24" cy="24" r="21" fill="rgba(0,0,0,.65)" stroke="#fdf3d9" stroke-width="2.5"/>
+              <path d="M19 14 L35 24 L19 34 Z" fill="#fdf3d9"/>
+            </svg>
+          </button>
+          <figcaption><span>In this clip a bird decided to make a loud noise, actually scaring us. The scream in this clip ended up being used at the end of the film.</span></figcaption>
+        </figure>
+        <figure>
+          <button class="clip" type="button" aria-label="Play clip: The weathered toolshed">
+            <video src="videos/clip-04.mp4" poster="images/clip-04-poster.jpg" preload="metadata" loop playsinline muted></video>
+            <svg class="play" viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="24" cy="24" r="21" fill="rgba(0,0,0,.65)" stroke="#fdf3d9" stroke-width="2.5"/>
+              <path d="M19 14 L35 24 L19 34 Z" fill="#fdf3d9"/>
+            </svg>
+          </button>
+          <figcaption><span>I wanted to make sure the toolshed in the backyard made it into the film due to its weathered appearance being great atmospheric content.</span></figcaption>
+        </figure>
+        <figure>
+          <button class="clip" type="button" aria-label="Play clip: The darkened backyard">
+            <video src="videos/clip-05.mp4" poster="images/clip-05-poster.jpg" preload="metadata" loop playsinline muted></video>
+            <svg class="play" viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="24" cy="24" r="21" fill="rgba(0,0,0,.65)" stroke="#fdf3d9" stroke-width="2.5"/>
+              <path d="M19 14 L35 24 L19 34 Z" fill="#fdf3d9"/>
+            </svg>
+          </button>
+          <figcaption><span>Despite us going out to film while there was still some light, the shadow from the house made the backyard much darker than expected. I attempted to fix the lighting in editing but it is still very dark in some spots.</span></figcaption>
+        </figure>
+        <figure>
+          <button class="clip" type="button" aria-label="Play clip: The creature jumps out and hisses">
+            <video src="videos/clip-06.mp4" poster="images/clip-06-poster.jpg" preload="metadata" loop playsinline muted></video>
+            <svg class="play" viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="24" cy="24" r="21" fill="rgba(0,0,0,.65)" stroke="#fdf3d9" stroke-width="2.5"/>
+              <path d="M19 14 L35 24 L19 34 Z" fill="#fdf3d9"/>
+            </svg>
+          </button>
+          <figcaption><span>I had to do a lot of sound editing to make Kiara’s hissing noise actually sound somewhat menacing but I am still pleased with how the visual of her jumping out was finalized in the film.</span></figcaption>
+        </figure>
+        <figure>
+          <button class="clip" type="button" aria-label="Play clip: Chasing then disappearing">
+            <video src="videos/clip-07.mp4" poster="images/clip-07-poster.jpg" preload="metadata" loop playsinline muted></video>
+            <svg class="play" viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="24" cy="24" r="21" fill="rgba(0,0,0,.65)" stroke="#fdf3d9" stroke-width="2.5"/>
+              <path d="M19 14 L35 24 L19 34 Z" fill="#fdf3d9"/>
+            </svg>
+          </button>
+          <figcaption><span>This shot was fun to film. I had her chasing me for the first part and then paused the recording to let her go hide so when I recorded again it would be like she disappeared.</span></figcaption>
+        </figure>
+        <figure>
+          <button class="clip" type="button" aria-label="Play clip: Ending shot at sunset">
+            <video src="videos/clip-08.mp4" poster="images/clip-08-poster.jpg" preload="metadata" loop playsinline muted></video>
+            <svg class="play" viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="24" cy="24" r="21" fill="rgba(0,0,0,.65)" stroke="#fdf3d9" stroke-width="2.5"/>
+              <path d="M19 14 L35 24 L19 34 Z" fill="#fdf3d9"/>
+            </svg>
+          </button>
+          <figcaption><span>This ending shot was nice since we got to have the sunset backdrop. Kael was also very excited to jump out and get me. I did have to do another take of this shot due to Kael moving around too much behind the tree at first.</span></figcaption>
+        </figure>
+      </section>
+
+    </div>
+  </main>
+
+  <script>
+    // Click a clip to play or pause it. Only one plays at a time.
+    const clips = document.querySelectorAll(".clip");
+
+    clips.forEach((btn) => {
+      const video = btn.querySelector("video");
+      const title = btn.getAttribute("aria-label").replace(/^(Play|Pause) clip: /, "");
+
+      const sync = () => {
+        const playing = !video.paused;
+        btn.classList.toggle("is-playing", playing);
+        btn.setAttribute("aria-label", (playing ? "Pause clip: " : "Play clip: ") + title);
+      };
+
+      btn.addEventListener("click", () => {
+        if (video.paused) {
+          clips.forEach((other) => {
+            const v = other.querySelector("video");
+            if (v !== video) v.pause();
+          });
+          video.play();
+        } else {
+          video.pause();
+        }
+      });
+
+      video.addEventListener("play", sync);
+      video.addEventListener("pause", sync);
+    });
+  </script>
+
+</body>
+</html>

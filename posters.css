@@ -1,0 +1,72 @@
+/* Posters page: shares the header, nav, spiky sides, torn-paper text,
+   and footer with the About page, then adds the poster layouts. */
+@import url("about.css");
+
+:root {
+  --body: "Duru Sans", "Trebuchet MS", sans-serif;
+}
+
+/* Page title is set in Juice ITC in the Figma file. It's a system font,
+   so Jaini Purva stands in on devices that don't have it. */
+h1 { font-family: "Juice ITC", var(--display); }
+
+/* Wide column for two-up poster grids */
+.content { max-width: 66rem; }
+
+/* Paragraph blocks stay narrower than the poster grid */
+section > p,
+.intro h2 {
+  max-width: 51rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section + section { margin-top: 3.5rem; }
+
+p span {
+  font-size: 1.125rem;
+  letter-spacing: -0.02em;
+}
+
+/* Down arrow under the intro */
+.down-arrow {
+  display: block;
+  width: 3.5rem;
+  height: auto;
+  margin: 1.5rem auto 0;
+  color: #000;
+}
+
+/* Posters */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 31rem));
+  justify-content: center;
+  gap: 3.5rem;
+  margin-top: 2rem;
+}
+
+/* A lone poster centers across both columns */
+.solo {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: min(100%, 31rem);
+}
+
+.final {
+  width: min(100%, 36rem);
+  margin: 2rem auto 0;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: minmax(0, 31rem);
+    gap: 2rem;
+  }
+}

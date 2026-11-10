@@ -37,7 +37,7 @@ h1 {
   margin: 0;
   padding: 0.4rem 1rem 0.5rem;
   text-align: center;
-  font-family: var(--display);
+  font-family: "Juice ITC",var(--display);
   font-weight: 400;
   font-size: clamp(2.5rem, 6vw, 4rem);
   line-height: 1.1;
@@ -136,9 +136,12 @@ h2 {
   font-weight: 400;
   font-size: clamp(1.6rem, 3.4vw, 2.2rem);
   line-height: 1.2;
-  color: var(--cream);
+  color: var(--black);
+  -webkit-text-stroke: 11px var(--cream);
+  text-decoration-color: var(--cream);
+  paint-order: stroke;
 }
-p {-webkit-text-stroke: 13px var(--cream);
+p {-webkit-text-stroke: 11px var(--cream);
   text-decoration-color: var(--cream);
 paint-order: stroke;}
 
