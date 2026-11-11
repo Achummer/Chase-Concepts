@@ -197,3 +197,21 @@ footer p a { color: inherit; text-underline-offset: 3px; }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+  .page-body {
+  display: flex;
+}
+
+.edge {
+  width: 136px;
+}
+
+/* The two edge pictures stack on top of each other */
+.edge-image {
+  display: block;
+  width: 136px;
+}
+
+/* In Figma the bottom picture overlaps the top one by 22px */
+.edge-image-bottom {
+  margin-top: -22px;
+}
