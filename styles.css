@@ -75,6 +75,7 @@ nav a.small-text {
   line-height: 43px;
   letter-spacing: 3px;
 }
+nav a:hover {background: var(--cream); color: var(--navy)}
 
 /* ---------- Main content ---------- */
 main {
