@@ -3,12 +3,13 @@
   --cream: #fbf2d5;
   --black: #000000;
   --white: #ffffff;
+  --navy: #0b0f3b;
 }
 
 /* ---------- Page ---------- */
 body {
   margin: 0;
-  background-image: url("images/chase-poster.png");
+  background-image: url("images/poster-final.jpg");
   background-size: cover;
   background-position: center top;
   font-family: "Jaini Purva", cursive;
@@ -93,6 +94,9 @@ main {
   line-height: 43px;
   letter-spacing: 3px;
   color: var(--white);
+  -webkit-text-stroke: 11px var(--navy);
+  text-decoration-color: var(--navy);
+  paint-order: stroke;
 }
 
 .film-link {
@@ -122,4 +126,7 @@ main {
   line-height: 43px;
   letter-spacing: 3px;
   color: var(--white);
+  -webkit-text-stroke: 11px var(--navy);
+  text-decoration-color: var(--navy);
+  paint-order: stroke;
 }

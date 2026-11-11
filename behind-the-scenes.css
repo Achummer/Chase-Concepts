@@ -93,3 +93,18 @@ figcaption span {
   .narrow p span,
   .wide-text p span { font-size: 1.25rem; }
 }
+.to-top {
+  display: grid;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: var(--navy);
+  color: var(--cream);
+  border: 2px solid var(--cream);
+  transition: background-color 0.15s, color 0.15s;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+.to-top:hover { background: var(--cream); color: var(--navy); }
+.to-top svg { width: 70%; height: 70%; }

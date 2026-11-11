@@ -39,13 +39,17 @@
         <h2>Film Location</h2>
         <p><span>CHASE was filmed in the backyard of my childhood house. I specifically waited till the sun was almost finished setting so that it would be dark out yet we would still have enough light to be able to see where we were going. All footage was captured on my smartphone.</span></p>
       </section>
-
+<!-- <video src="videos/clip-02.mp4" preload="metadata" loop playsinline muted></video> -->
+<video width="320" height="240" controls>
+  <source src="videos/clip-02.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
       <section class="wide-text">
         <h2>Crew Involved</h2>
         <p><span>The people involved in playing the characters in CHASE were director Abby Hummer playing the main character, Kiara Knowles playing the horned creature, and Kael Knowles playing the hooded figure. Costuming was provided by the director as well as items the other actors brought from home. All editing was done by the director and the soundtrack for the film is comprised of royalty free music track “Dead Silence” by Lennon Hutton.</span></p>
         <p class="gap"><span>Below are some of the raw footage clips that would end up being edited and used in the film. (click to play/pause)</span></p>
       </section>
-
+  
       <section class="clips">
         <figure>
           <button class="clip" type="button" aria-label="Play clip: Walking down the staircase outside">
@@ -59,7 +63,7 @@
         </figure>
         <figure>
           <button class="clip" type="button" aria-label="Play clip: Open grass area and trees">
-            <video src="videos/videos_clip-02.mp4" preload="metadata" loop playsinline muted></video>
+            <video src="videos/clip-02.mp4" preload="metadata" loop playsinline muted></video>
             <svg class="play" viewBox="0 0 48 48" aria-hidden="true">
               <circle cx="24" cy="24" r="21" fill="rgba(0,0,0,.65)" stroke="#fdf3d9" stroke-width="2.5"/>
               <path d="M19 14 L35 24 L19 34 Z" fill="#fdf3d9"/>
@@ -162,6 +166,11 @@
       video.addEventListener("pause", sync);
     });
   </script>
+  <a class="to-top" href="#top" aria-label="Back to top">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M24 9 L40 38 L33 38 L24 22 L15 38 L8 38 Z" fill="currentColor"/>
+      </svg>
+    </a>
 
 </body>
 </html>

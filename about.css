@@ -6,7 +6,7 @@
   --cream: #fdf3d9;
   --ink: #1a1a1a;
   --display: "Jaini Purva", "Impact", sans-serif;
-  --body: "Fira Sans Condensed", "Arial Narrow", sans-serif;
+  --body: "Duru Sans", "Trebuchet MS", sans-serif;
 }
 
 /* ---------- Base ---------- */
@@ -19,8 +19,8 @@ body {
   background: var(--blue);
   color: var(--ink);
   font-family: var(--body);
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 24px;
+  line-height: 55px;
 }
 
 .defs { position: absolute; }
@@ -69,14 +69,14 @@ nav a {
   justify-content: center;
   padding: 0.7rem 0.5rem;
   font-family: var(--display);
-  font-size: clamp(1.2rem, 2.6vw, 1.9rem);
+  font-size: 48px;
   letter-spacing: 0.04em;
   text-align: center;
   text-decoration: none;
   color: var(--cream);
   transition: background-color 0.15s, color 0.15s;
 }
-nav a.small-text { font-size: clamp(0.95rem, 1.8vw, 1.3rem); line-height: 1.15; }
+nav a.small-text { font-size: 32px; line-height: 1.15; }
 
 
 /* ---------- Main + spiky side shapes ---------- */
@@ -141,7 +141,7 @@ h2 {
   text-decoration-color: var(--cream);
   paint-order: stroke;
 }
-p {-webkit-text-stroke: 11px var(--cream);
+p {-webkit-text-stroke: 15px var(--cream);
   text-decoration-color: var(--cream);
 paint-order: stroke;}
 
@@ -160,7 +160,9 @@ footer p {
   font-size: 1.3rem;
   color: var(--cream);
 }
-
+.contact {
+  color:#000;
+}
 footer p a { color: inherit; text-underline-offset: 3px; }
 
 .to-top {
@@ -168,6 +170,9 @@ footer p a { color: inherit; text-underline-offset: 3px; }
   place-items: center;
   width: 4rem;
   height: 4rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
   background: var(--navy);
   color: var(--cream);
   border: 2px solid var(--cream);
