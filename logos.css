@@ -3,10 +3,9 @@
 @import url("about.css");
 
 /* Wider column so the image sheets have room */
-.content { max-width: 40rem; }
-
-/* The first section's heading sits above the opening paragraph */
-section + section { margin-top: 2.5rem; }
+.content {
+  max-width: 640px;
+}
 
 /* Images */
 img {
@@ -17,39 +16,34 @@ img {
 
 /* Two type-study sheets side by side */
 .pair {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.75rem;
-  margin: 1.75rem auto 0;
+  display: flex;
+  gap: 12px;
+  margin: 28px auto 0;
+}
+
+.pair img {
+  width: 50%;
 }
 
 /* Single white concept/refinement sheets */
 .sheet {
-  width: min(100%, 26rem);
-  margin: 1.75rem auto 0;
+  width: 100%;
+  max-width: 416px;
+  margin: 28px auto 0;
 }
 
 /* Final logo, shown wide on its grey backdrop */
 .final {
   width: 100%;
-  margin: 1.75rem auto 0;
+  margin: 28px auto 0;
 }
 
 @media (max-width: 600px) {
-  .pair { grid-template-columns: 1fr; }
+  .pair {
+    flex-direction: column;
+  }
+
+  .pair img {
+    width: 100%;
+  }
 }
-.to-top {
-  display: grid;
-  place-items: center;
-  width: 4rem;
-  height: 4rem;
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background: var(--navy);
-  color: var(--cream);
-  border: 2px solid var(--cream);
-  transition: background-color 0.15s, color 0.15s;
-}
-.to-top:hover { background: var(--cream); color: var(--navy); }
-.to-top svg { width: 70%; height: 70%; }
