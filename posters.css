@@ -8,7 +8,7 @@
 
 /* Page title is set in Juice ITC in the Figma file. It's a system font,
    so Jaini Purva stands in on devices that don't have it. */
-h1 { font-family: "Juice ITC", var(--display); }
+h1 { font-family: "Juice ITC", Jaini Purva, sans-serif; }
 
 /* Wide column for two-up poster grids */
 .content { max-width: 66rem; }

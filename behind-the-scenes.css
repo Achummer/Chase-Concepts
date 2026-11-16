@@ -8,7 +8,7 @@
 
 /* Page title is Juice ITC in the Figma file (a system font),
    with Jaini Purva as the fallback. */
-h1 { font-family: "Juice ITC", var(--display); }
+h1 { font-family: "Juice ITC", Jaini Purva, sans-serif; }
 
 .content { max-width: 69rem; }
 
