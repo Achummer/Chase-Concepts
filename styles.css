@@ -50,7 +50,7 @@ nav ul {
 }
 
 nav li {
-  width: 313px;
+  width: 300px;
 }
 
 nav a {
@@ -130,4 +130,7 @@ main {
   -webkit-text-stroke: 11px var(--navy);
   text-decoration-color: var(--navy);
   paint-order: stroke;
+}
+html {
+  max-width: 2000px;
 }
